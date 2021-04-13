@@ -4,9 +4,9 @@
 - 💞️ I’m looking to collaborate on all DevOps Cloud 
 - 📫 Reach me my mail lok.pavan@outlook.com
 
-_**[Infrastructure Autmation with Terraform Cloud using Jenkins](https://lokpavan03.github.io/InfraAutoJenkinsTFCloud/)**
+_**[Infrastructure Autmation with Terraform Cloud using Jenkins](https://lokpavan03.github.io/InfraAutoJenkinsTFCloud/)**_
 
-_**[Infrastructure Autmation with Terraform Cloud using GitHub Actions](https://lokpavan03.github.io/terraformgitaction/)**
+_**[Infrastructure Autmation with Terraform Cloud using GitHub Actions](https://lokpavan03.github.io/terraformgitaction/)**_
 
 <!---
 lokpavan03/lokpavan03 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
