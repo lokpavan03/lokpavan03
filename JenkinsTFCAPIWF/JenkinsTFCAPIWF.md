@@ -1,12 +1,25 @@
 # Azure Infrastructure Automation with Jenkins Active Choices using Terraform Cloud API driven Workflow
 
 <span style="color:black;">Contents</span>
+- [GitHub Setup](#GitHub-Setup)
 - [Terraform Cloud setup](#Terraform-Cloud-setup)
 - [Terraform Scripts](#Terraform-Scripts)
 - [Azure Key Vault Secret](#Azure-Key-Vault-Secret)
 - [Azure Key Vault Jenkins Integration](#Azure-Key-Vault-Jenkins-Configuration)
 - [Jenkins Pipeline](#Jenkins-Pipeline)
 - [Azure Resources Validation](#Azure-Resources-Validation)
+
+## _**GitHub Setup**_
+
+1. Create a GitHub account use the following URL **[GitHubJoin](https://github.com/join)** if account doesn't exists.
+2. Once the GitHub account created login to the GitHub portal with Username and Password.
+3. Create a Repository.
+
+![GitHub](https://github.com/lokpavan03/terraformgitaction/blob/main/gifs/github.gif?raw=true)
+
+4. Upload the terraform scripts, Jenkinsfile and API driven workflow shell script to the GitHub repository.
+
+![API Script](https://github.com/lokpavan03/lokpavan03/blob/gh-pages/JenkinsTFCAPIWF/JenkinsTFCAPIWF/APIdrivenWF.gif?raw=true)
 
 ## _**Terraform Cloud setup**_
 1. Create a Terraform Cloud account use the following URL **[TerraformCloud](https://www.terraform.io/cloud)** if account doesn't exists.
@@ -34,14 +47,14 @@
 2. In Terraform **main.tf** is the main file it contains the Terraform Cloud Configuration block, Azure resource provider block and resoures block.
 3. In Terraform **variables.tf** contains all the variable declaration information.
 
-![Terraform_Scripts](https://github.com/lokpavan03/InfraAutoJenkinsTFCloud/blob/master/jpgs/TerraformScripts.gif)
+![Terraform_Scripts](https://github.com/lokpavan03/lokpavan03/blob/gh-pages/JenkinsTFCAPIWF/JenkinsTFCAPIWF/Terraform_scripts.gif?raw=true)
 
 ##_**Azure Key Vault Secret**_
 1. Login to the Azure Portal **[AzurePortal](https://portal.azure.com)** with your credentials
 2. Go to the Key Vault if exists otherwise create a key vault.
 3. Store the Terraform cloud **APITOKEN** under the secrets.
 
-
+![Azure Key Vault](https://github.com/lokpavan03/lokpavan03/blob/gh-pages/JenkinsTFCAPIWF/JenkinsTFCAPIWF/AzureKeyVault.gif?raw=true)
 
 ##_**Azure Key Vault Jenkins Integration**_
 1. Go to the Jenkins dashboard.
@@ -52,28 +65,40 @@
 6. Under the kind choose **Microsoft Azure Service Principal** and provide the Client ID, Tenant ID, Client Secret and Subscription ID details and save it.
 7. We call the Key Vault with Key Vault URL using Service Principal.
 
+![Key Vault Integration](https://github.com/lokpavan03/lokpavan03/blob/gh-pages/JenkinsTFCAPIWF/JenkinsTFCAPIWF/KeyVaultConfig.gif?raw=true)
 
 ## _**Jenkins Pipeline**_
 1. Create a New Item in the Jenkins dashboard and choose the pipeline job and provide name for it.
 
-![Jenkins Pipeline](https://github.com/lokpavan03/InfraAutoJenkinsTFCloud/blob/master/jpgs/PipelineJob.gif)
+![Jenkins Pipeline](https://github.com/lokpavan03/lokpavan03/blob/gh-pages/JenkinsTFCAPIWF/JenkinsTFCAPIWF/JenkinsPipeline.gif?raw=true)
 
 3. Generate the Jenkins pipeline script using syntax generator.
 4. Once script is reade, save the file as Jenkinsfile and store it in GitHub repository.
 5. Run the Jenkinsfile from the pipeline through SCM.
 
-![Jenkinsfile](https://github.com/lokpavan03/InfraAutoJenkinsTFCloud/blob/master/jpgs/SCM_Jenkinsfile.gif)
+![Jenkinsfile](https://github.com/lokpavan03/lokpavan03/blob/gh-pages/JenkinsTFCAPIWF/JenkinsTFCAPIWF/JenkinsFile.gif?raw=true)
 
 6. Run the Jenkins Pipeline Job with Build Parameters and provide the necessary inputs.
 
-![JenkinsPipelineRun](https://github.com/lokpavan03/InfraAutoJenkinsTFCloud/blob/master/jpgs/JenkinsJobParams.gif)
+![JenkinsPipelineRun](https://github.com/lokpavan03/lokpavan03/blob/gh-pages/JenkinsTFCAPIWF/JenkinsTFCAPIWF/RunningPipeline.gif?raw=true)
+
+7. Once Pipeline completed successfully. 
+8. Login to the Terraform Cloud account and check the run under the requested Workspace.
+9. Once **PLAN** is completed successfully. 
+10. Confirm the **APPLY** to run.
+
+![Terraform Apply](https://github.com/lokpavan03/lokpavan03/blob/gh-pages/JenkinsTFCAPIWF/JenkinsTFCAPIWF/TerraformValidation.gif?raw=true)
 
 ## _**Azure Resource Validation**_
 1. Login to the Azure Portal **[AzurePortal](https://portal.azure.com)** with your credentials
 2. Go to resouce group and check for created resources.
 3. Validate whether the resources created or not.
 
-![Azure Resources Validation](https://github.com/lokpavan03/InfraAutoJenkinsTFCloud/blob/master/jpgs/Validation.gif)
+![Azure Resources Validation](https://github.com/lokpavan03/lokpavan03/blob/gh-pages/JenkinsTFCAPIWF/JenkinsTFCAPIWF/Validation.gif?raw=true)
+
+4. Login to the VM with the Parameters and Validate.
+
+![VMValidation](https://github.com/lokpavan03/lokpavan03/blob/gh-pages/JenkinsTFCAPIWF/JenkinsTFCAPIWF/Validation.gif?raw=true)
 
 Thanks,
 Lok
