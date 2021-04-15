@@ -10,6 +10,7 @@ _**[Infrastructure Autmation with Terraform Cloud using GitHub Actions](https://
 
 _**[Infrastructure Autmation with Terraform Cloud API driven Workflow using GitHub Actions](https://lokpavan03.github.io/TerraformCloudAPIdrivenWF/)**_
 
+_**[Azure Infrastructure Automation with Jenkins Active Choices using Terraform Cloud API driven Workflow](https://lokpavan03.github.io/InfraAutoTFCAPIWFJenPar/)**_
 
 
 <!---
