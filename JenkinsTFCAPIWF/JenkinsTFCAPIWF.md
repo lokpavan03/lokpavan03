@@ -98,7 +98,7 @@
 
 4. Login to the VM with the Parameters and Validate.
 
-![VMValidation](https://github.com/lokpavan03/lokpavan03/blob/gh-pages/JenkinsTFCAPIWF/JenkinsTFCAPIWF/Validation.gif?raw=true)
+![VMValidation](https://github.com/lokpavan03/lokpavan03/blob/gh-pages/JenkinsTFCAPIWF/JenkinsTFCAPIWF/server_validation.gif?raw=true)
 
 Thanks,
 Lok
